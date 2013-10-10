@@ -1,0 +1,595 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "twitchView",
+        "designer|userClassName": "twitchView",
+        "designer|userAlias": "twitchView",
+        "designer|initialView": true
+    },
+    "designerId": "b156e280-2772-4473-b49d-a4beec23b990",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "width": null,
+                "title": "Twitch.tv"
+            },
+            "designerId": "91854967-1d8c-413e-968b-a1c85f05bb60",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "cls": "col_left",
+                        "width": null,
+                        "designer|displayName": "menu"
+                    },
+                    "designerId": "2c38bce7-200d-427d-9e3c-d08f462d13c0",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "title",
+                                "text": "twitch"
+                            },
+                            "designerId": "68532454-479b-4b33-9286-bf11fafd3de1"
+                        },
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu_simple",
+                                "floating": false,
+                                "width": null
+                            },
+                            "designerId": "0a677bbc-49e2-4112-b455-f1d80a928ea8",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "118a26bc-3a7a-4e51-adf1-68f22f3b470c"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "4871de1f-28d6-4d21-bc73-2274f7681cdf"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "cea79f53-cb77-4eeb-9fad-0fc7e4541ed9"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu_simple",
+                                "floating": false,
+                                "width": null
+                            },
+                            "designerId": "d47066f7-0815-4707-84d9-3a8b5afd3c9b",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "a4adfd05-dccb-4d5a-a307-a7b4e4e193f6"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "4a0e1939-46f9-47ad-a3de-1b94a4135d06"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "633db497-74c2-43f5-aa22-e41f863d1f21"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu_simple",
+                                "floating": false,
+                                "width": null
+                            },
+                            "designerId": "ce9c2d33-0bde-46bf-badc-775c94e29b6a",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "ca795dda-ae41-4049-9af2-258e3650ed74"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "6154f367-12f7-40ef-a220-7bf0bb4d2e2b"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "designerId": "0151a417-060f-4436-966f-1dfa0be3ca7d"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "col_center",
+                        "designer|displayName": "video"
+                    },
+                    "designerId": "7736db7e-c12f-4c02-b248-177c4a0b0b16",
+                    "cn": [
+                        {
+                            "type": "Ext.view.View",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "video",
+                                "itemSelector": "div"
+                            },
+                            "designerId": "375916ba-90d6-4a56-b019-fcf2b52f9e08",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "tpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "implHandler": [
+                                            "<object type=\"application/x-shockwave-flash\" height=\"300\" width=\"400\" data=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=antenadota\"><param name=\"movie\" value=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=antenadota\"></param><param name=\"allowScriptAccess\" value=\"always\"></param><param name=\"allowNetworking\" value=\"all\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"flashvars\" value=\"hostname=www.twitch.tv&start_volume=25&channel=antenadota&auto_play=false\"></param></object>"
+                                        ],
+                                        "designer|displayName": "tpl"
+                                    },
+                                    "designerId": "025d7982-e207-4cad-ab35-25a3f97c557b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "button_group_video",
+                                "designer|displayName": "avatar"
+                            },
+                            "designerId": "723a441a-92fe-4e7d-a470-33f6e4fca014"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "3a9126c9-7adf-402b-9ccd-6dc4e5bae16c"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "button_group_video",
+                                "designer|displayName": "subscribe_group"
+                            },
+                            "designerId": "6ce11bb2-e053-4d44-8954-96c2ed46df4a",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "follow"
+                                    },
+                                    "designerId": "1252ee23-6cf1-4c0f-8551-23435868b0fc"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Subcribe 8$"
+                                    },
+                                    "designerId": "1984bbf8-7d37-46ee-b203-4a3c5bed22cb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "col_right",
+                        "height": 500,
+                        "designer|displayName": "chat"
+                    },
+                    "designerId": "0c3d7e1a-6f43-4ecb-8a0a-c851f3089acd",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "button_group"
+                            },
+                            "designerId": "5eae1f12-5776-4e11-9225-fb8bb2e6c958",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Chat"
+                                    },
+                                    "designerId": "d05f6147-452d-4191-8532-d5f3fd3bb157"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "video"
+                                    },
+                                    "designerId": "2d55ecbb-0334-43e8-b877-103656fb7fe8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.TextArea",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "chatBox",
+                                "height": 340,
+                                "id": "chatBoxHistory",
+                                "designer|displayName": "chatBoxHistory",
+                                "fieldLabel": "",
+                                "name": "chatBoxHistory",
+                                "value": [
+                                    "Welcome to the chat room!",
+                                    "» Orogenesis: hopefully they can work as a team too",
+                                    "",
+                                    "» Jmickley1996: god am i the only one whos sound is terrible? like reallly choppy?",
+                                    "",
+                                    "» Orogenesis: sounds fine to me Ive missed winter, I like his insights great player but cant find a good team to save his life",
+                                    "",
+                                    "» Mod Awesome_ninja: it does crackle a bit",
+                                    "",
+                                    "» Psilocyboid: Winter is a horrible caster for this. Hard to understand and talks over Godz all the time",
+                                    "",
+                                    "» Mod Awesome_ninja: I think this is due to Twitch VODs",
+                                    "",
+                                    "» Orogenesis: yeah I hear what you mean now How is it hard to understand? His english vocabulary is better than most americans just a bit of an accent",
+                                    "",
+                                    "» Jmickley1996: DAMN YOU TWITCH",
+                                    "",
+                                    "» Psilocyboid: vocabulary is one thing, enunciation is another",
+                                    "",
+                                    "» Mod Awesome_ninja: he is also talking over skype"
+                                ]
+                            },
+                            "designerId": "377cdc74-f1ee-4ba1-be2b-817388be3810"
+                        },
+                        {
+                            "type": "Ext.form.field.TextArea",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "chatInput",
+                                "id": "chatBox",
+                                "designer|displayName": "chatBox",
+                                "fieldLabel": "",
+                                "name": "chatBox"
+                            },
+                            "designerId": "4e85706d-390c-4bd1-aaea-6b4a04b9c0c8"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "button_chat"
+                            },
+                            "designerId": "5e220cec-e74d-462b-91a8-4c43a2a12076",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Cycle",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "button_config",
+                                        "height": null,
+                                        "width": null,
+                                        "text": ""
+                                    },
+                                    "designerId": "202c6762-ea9e-4b14-bb6a-ea193ebe18f0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 120
+                                            },
+                                            "designerId": "9bc92460-2772-4383-ade7-758da37bc246",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "f9ceabbf-88ac-4653-9c93-490a5c7efb69"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "0c88160b-0b37-4a6c-abc5-45a8e76bf0dd"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "0434c9de-e6f7-4152-bec2-385e7c1f3463"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Cycle",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "button_config",
+                                        "showText": null
+                                    },
+                                    "designerId": "448d9b78-56cb-4268-b083-5019b5110199",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 120
+                                            },
+                                            "designerId": "ea978056-8203-4d53-807d-33e867e6f486",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "c791810d-d6ef-4472-95ca-191457e16ae3"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "6a7db928-76d0-44d6-a889-ba218588922b"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.CheckItem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "Menu Item"
+                                                    },
+                                                    "designerId": "d190d409-9573-4702-9f48-2a7f791a17a5"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "button_chat",
+                                        "height": null,
+                                        "id": "btnSendChat",
+                                        "text": "chat"
+                                    },
+                                    "designerId": "96627c44-06a0-492a-8d23-1b2382f0875b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "id": "loginView",
+        "width": 400,
+        "designer|userClassName": "loginView",
+        "layout": "fit"
+    },
+    "designerId": "46f7f203-5bb2-4ce0-9be1-af9ae4537854",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "auto",
+                "bodyPadding": 10,
+                "title": "My Form"
+            },
+            "designerId": "cfc4eb38-3ef5-448e-8b13-f9363d2f049f",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "id": "userName",
+                        "designer|displayName": "userName",
+                        "fieldLabel": "user",
+                        "name": "userName"
+                    },
+                    "designerId": "eb6ef891-1809-4402-be24-907e0da3722d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "id": "userPass",
+                        "designer|displayName": "userPass",
+                        "fieldLabel": "password",
+                        "name": "userPass"
+                    },
+                    "designerId": "2755781d-db05-43a1-acc7-00b063a7e11c"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnLogin",
+                        "designer|displayName": "btnLogin",
+                        "text": "Login"
+                    },
+                    "designerId": "45d72650-cd14-41c3-ba3a-dc66844d6fef"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "chat",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "chatHistory"
+    },
+    "designerId": "193d937f-fee0-42e6-8a96-3ca14ab7f089",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/chat.json"
+            },
+            "designerId": "1f769350-0eef-4a5b-aac8-cc9949143ac6",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "74b30088-10ac-403e-b3a0-bd10d4fd1b03"
+                }
+            ]
+        }
+    ]
+}

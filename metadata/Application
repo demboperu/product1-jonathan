@@ -1,0 +1,49 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "chat"
+        ],
+        "stores": [
+            "chatHistory"
+        ],
+        "views": [
+            "twitchView"
+        ],
+        "controllers": [
+            "Streaming"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.create('MyApp.view.loginView', {}).show();",
+                    "Ext.create('Ext.container.Viewport', {",
+                    "    layout: 'fit',",
+                    "    id: 'twitchView',",
+                    "    items: [",
+                    "    {",
+                    "        xtype: 'twitchView',",
+                    "    }]",
+                    "}); "
+                ]
+            },
+            "designerId": "0828fc47-0af6-4d96-bb17-8c31a5b56d66"
+        }
+    ]
+}

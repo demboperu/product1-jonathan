@@ -1,0 +1,40 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "chat"
+    },
+    "designerId": "33d7d7cf-3e70-4a75-8ca2-95bed15b6937",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "message",
+                "type": "string"
+            },
+            "designerId": "240a14e7-16f2-4599-aaf4-1e47572d6829"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "user",
+                "type": "string"
+            },
+            "designerId": "7e19c0d6-cd88-4cd7-ba3b-b427487f5a5a"
+        }
+    ]
+}
