@@ -31,11 +31,20 @@
                 "implHandler": [
                     "",
                     "this.control({",
-                    "    \"#btnSendChat\" : {",
+                    "    \"#sendChat\" : {",
                     "        click : this.onSendChatClick",
                     "    },",
-                    "    \"#btnLogin\" : {",
+                    "    \"#login\" : {",
                     "        click : this.onLoginClick",
+                    "    },",
+                    "    \"#logout\" : {",
+                    "        click : this.onLogoutClick",
+                    "    },",
+                    "    \"#listView\" : {",
+                    "        itemdblclick : this.onStreamItemDblClick",
+                    "    },",
+                    "    \"#home\" : {",
+                    "        click : this.onHomeClick",
                     "    }",
                     "});",
                     "",
@@ -61,8 +70,15 @@
                 "implHandler": [
                     "var newChat = this.getTxtChat().getValue();",
                     "var historyChat = this.getTxtChatHistory().getValue();",
-                    "this.getTxtChatHistory().setValue(\"» jOnAThaN:\" + newChat + \"\\n\\n\" +historyChat);",
-                    "this.getTxtChat().setValue(\"\");",
+                    "",
+                    "var userName = localStorage.getItem(\"userTwitch\");",
+                    "",
+                    "if(userName==undefined){",
+                    "    this.application.viewport.layout.setActiveItem(0);",
+                    "}else{",
+                    "\tthis.getTxtChatHistory().setValue(\"» \" + userName + \":\" + newChat + \"\\n\\n\" +historyChat);",
+                    "    this.getTxtChat().setValue(\"\");",
+                    "}",
                     ""
                 ]
             },
@@ -86,6 +102,108 @@
                 ]
             },
             "designerId": "b9557bbc-4fd1-4a0c-bf5e-407e1ed7a381"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginClick",
+                "designer|params": [
+                    "button"
+                ],
+                "implHandler": [
+                    "var userName = this.getUserName().getValue();",
+                    "var userPass = this.getUserPass().getValue();",
+                    "",
+                    "this.application.viewport.layout.setActiveItem(1);",
+                    "",
+                    "localStorage.setItem(\"userTwitch\",userName);",
+                    "",
+                    "this.getUserName().setValue(\"\");",
+                    "this.getUserPass().setValue(\"\");"
+                ]
+            },
+            "designerId": "417352ee-914c-4f2a-9955-d94acf0690dc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLogoutClick",
+                "implHandler": [
+                    "console.log(\"viewport\", this.application.viewport);",
+                    "",
+                    "//this.application.viewport.setActiveItem(1);",
+                    "",
+                    "this.application.viewport.layout.setActiveItem(0);",
+                    "localStorage.removeItem(\"userTwitch\");",
+                    "",
+                    "//this.getLoginView().show();",
+                    "//this.getTwitchView().show();"
+                ]
+            },
+            "designerId": "7365b13a-db1c-4caa-9857-c0199441c5db"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "userName",
+                "ref": "userName",
+                "selector": "#userName"
+            },
+            "designerId": "bcddf4a7-3129-468b-ad1e-e681d5098918"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "userPass",
+                "selector": "#userPass"
+            },
+            "designerId": "71a37be4-9fdf-4dbb-b40d-1d5ff181405f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginView",
+                "selector": "#loginView"
+            },
+            "designerId": "1969fe44-6918-4f4e-b79b-f30287629543"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "twitchView",
+                "selector": "#twitchViewMain"
+            },
+            "designerId": "88b9f554-a598-4581-b860-5082bac4dcd1"
         },
         {
             "type": "controllerref",
@@ -121,21 +239,25 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onLoginClick",
+                "fn": "onStreamItemDblClick",
                 "designer|params": [
-                    "button"
+                    "record",
+                    "element",
+                    "propertys"
                 ],
                 "implHandler": [
-                    "console.log(\"user: \" +this.getUserName().getValue());",
-                    "console.log(\"pass: \" +this.getUserPass().getValue());",
-                    "console.log(this.getLoginView());",
-                    "/*var lay = this.getTwitchView().getLayout();",
-                    "lay.setActiveItem(1);*/",
-                    "this.getLoginView().hide();",
-                    "this.getTwitchView().show();"
+                    "console.log(\"dblClick\");",
+                    "",
+                    "console.log(record);",
+                    "console.log(element);",
+                    "console.log(propertys);",
+                    "",
+                    "this.application.viewport.layout.setActiveItem(1);",
+                    "",
+                    "this.getStreamingView().update(element.data);"
                 ]
             },
-            "designerId": "417352ee-914c-4f2a-9955-d94acf0690dc"
+            "designerId": "efd3aee5-ad2a-4f39-b0cb-c75b51299979"
         },
         {
             "type": "controllerref",
@@ -145,50 +267,25 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "userName",
-                "ref": "userName",
-                "selector": "#userName"
+                "ref": "streamingView",
+                "selector": "#streamingView"
             },
-            "designerId": "bcddf4a7-3129-468b-ad1e-e681d5098918"
+            "designerId": "afbfaa77-1c8c-4faf-a66b-df784720968a"
         },
         {
-            "type": "controllerref",
+            "type": "basicfunction",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "userPass",
-                "selector": "#userName"
+                "fn": "onHomeClick",
+                "implHandler": [
+                    "this.application.viewport.layout.setActiveItem(2);"
+                ]
             },
-            "designerId": "71a37be4-9fdf-4dbb-b40d-1d5ff181405f"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "loginView",
-                "selector": "#loginView"
-            },
-            "designerId": "1969fe44-6918-4f4e-b79b-f30287629543"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "twitchView",
-                "selector": "#twitchView"
-            },
-            "designerId": "88b9f554-a598-4581-b860-5082bac4dcd1"
+            "designerId": "8f1dc526-76bd-449f-99b7-f90708b3bac5"
         }
     ]
 }

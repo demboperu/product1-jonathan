@@ -6,13 +6,93 @@
     },
     "codeClass": null,
     "userConfig": {
+        "activeItem": 2,
         "id": "twitchView",
         "designer|userClassName": "twitchView",
         "designer|userAlias": "twitchView",
-        "designer|initialView": true
+        "designer|initialView": true,
+        "layout": "card"
     },
     "designerId": "b156e280-2772-4473-b49d-a4beec23b990",
     "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "loginView",
+                "designer|displayName": "loginView",
+                "title": "My Panel"
+            },
+            "designerId": "77eee004-9d53-49e1-99ac-8c5be737deee",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "loginForm",
+                        "layout": "auto",
+                        "bodyPadding": 10,
+                        "title": "My Form"
+                    },
+                    "designerId": "41426cb1-c405-48c6-a496-a013c1bad8e4",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "userName",
+                                "designer|displayName": "userName",
+                                "fieldLabel": "User",
+                                "name": "userName"
+                            },
+                            "designerId": "1919ba19-1bf2-4bb9-9e81-cb9596dfb6f3"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "userPass",
+                                "designer|displayName": "userPass",
+                                "fieldLabel": "Password",
+                                "name": "userPass",
+                                "inputType": "password"
+                            },
+                            "designerId": "565edbc7-5282-49b9-8b3e-81659697fd31"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "login",
+                                "designer|displayName": "login",
+                                "text": "MyButton"
+                            },
+                            "designerId": "947400f3-1e73-43f5-82f7-686b1f0d45be"
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "type": "Ext.panel.Panel",
             "reference": {
@@ -43,171 +123,232 @@
                     "designerId": "2c38bce7-200d-427d-9e3c-d08f462d13c0",
                     "cn": [
                         {
-                            "type": "Ext.form.Label",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "cls": "title",
-                                "text": "twitch"
+                                "cls": "",
+                                "designer|displayName": "title"
                             },
-                            "designerId": "68532454-479b-4b33-9286-bf11fafd3de1"
-                        },
-                        {
-                            "type": "Ext.menu.Menu",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": "menu_simple",
-                                "floating": false,
-                                "width": null
-                            },
-                            "designerId": "0a677bbc-49e2-4112-b455-f1d80a928ea8",
+                            "designerId": "7a6c5f02-9451-4510-81a3-9898e850ea84",
                             "cn": [
                                 {
-                                    "type": "Ext.menu.Item",
+                                    "type": "Ext.button.Button",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "text": "Menu Item"
+                                        "cls": "title",
+                                        "id": "home",
+                                        "designer|displayName": "home",
+                                        "text": ""
                                     },
-                                    "designerId": "118a26bc-3a7a-4e51-adf1-68f22f3b470c"
-                                },
-                                {
-                                    "type": "Ext.menu.Item",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "Menu Item"
-                                    },
-                                    "designerId": "4871de1f-28d6-4d21-bc73-2274f7681cdf"
-                                },
-                                {
-                                    "type": "Ext.menu.Item",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "Menu Item"
-                                    },
-                                    "designerId": "cea79f53-cb77-4eeb-9fad-0fc7e4541ed9"
+                                    "designerId": "490514ee-d764-48c9-9f64-fd427c75803e"
                                 }
                             ]
                         },
                         {
-                            "type": "Ext.menu.Menu",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "cls": "menu_simple",
-                                "floating": false,
-                                "width": null
+                                "cls": "submenu",
+                                "designer|displayName": "submenu"
                             },
-                            "designerId": "d47066f7-0815-4707-84d9-3a8b5afd3c9b",
+                            "designerId": "fa3015d9-584d-4025-b4fc-ff55ddc2aefc",
                             "cn": [
                                 {
-                                    "type": "Ext.menu.Item",
+                                    "type": "Ext.menu.Menu",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "text": "Menu Item"
+                                        "cls": "menu_simple",
+                                        "floating": false,
+                                        "width": null
                                     },
-                                    "designerId": "a4adfd05-dccb-4d5a-a307-a7b4e4e193f6"
+                                    "designerId": "0a677bbc-49e2-4112-b455-f1d80a928ea8",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "118a26bc-3a7a-4e51-adf1-68f22f3b470c"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "4871de1f-28d6-4d21-bc73-2274f7681cdf"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "cea79f53-cb77-4eeb-9fad-0fc7e4541ed9"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "type": "Ext.menu.Item",
+                                    "type": "Ext.menu.Menu",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "text": "Menu Item"
+                                        "cls": "menu_simple",
+                                        "floating": false,
+                                        "width": null
                                     },
-                                    "designerId": "4a0e1939-46f9-47ad-a3de-1b94a4135d06"
+                                    "designerId": "d47066f7-0815-4707-84d9-3a8b5afd3c9b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "a4adfd05-dccb-4d5a-a307-a7b4e4e193f6"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "4a0e1939-46f9-47ad-a3de-1b94a4135d06"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "633db497-74c2-43f5-aa22-e41f863d1f21"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "type": "Ext.menu.Item",
+                                    "type": "Ext.menu.Menu",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "text": "Menu Item"
+                                        "cls": "menu_simple",
+                                        "floating": false,
+                                        "width": null
                                     },
-                                    "designerId": "633db497-74c2-43f5-aa22-e41f863d1f21"
+                                    "designerId": "ce9c2d33-0bde-46bf-badc-775c94e29b6a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "ca795dda-ae41-4049-9af2-258e3650ed74"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "6154f367-12f7-40ef-a220-7bf0bb4d2e2b"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "designerId": "0151a417-060f-4436-966f-1dfa0be3ca7d"
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "type": "Ext.menu.Menu",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "cls": "menu_simple",
-                                "floating": false,
-                                "width": null
+                                "cls": "logout",
+                                "designer|displayName": "logout"
                             },
-                            "designerId": "ce9c2d33-0bde-46bf-badc-775c94e29b6a",
+                            "designerId": "797154b3-512c-425b-acd0-95771dcfb355",
                             "cn": [
                                 {
-                                    "type": "Ext.menu.Item",
+                                    "type": "Ext.button.Button",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "text": "Menu Item"
+                                        "id": "logout",
+                                        "designer|displayName": "logout",
+                                        "text": "Salir"
                                     },
-                                    "designerId": "ca795dda-ae41-4049-9af2-258e3650ed74"
-                                },
-                                {
-                                    "type": "Ext.menu.Item",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "Menu Item"
-                                    },
-                                    "designerId": "6154f367-12f7-40ef-a220-7bf0bb4d2e2b"
-                                },
-                                {
-                                    "type": "Ext.menu.Item",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "Menu Item"
-                                    },
-                                    "designerId": "0151a417-060f-4436-966f-1dfa0be3ca7d"
+                                    "designerId": "b4a6767a-35c3-4644-be8d-adfb8d28f3e7"
                                 }
                             ]
                         }
@@ -235,7 +376,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "cls": "video",
-                                "itemSelector": "div"
+                                "id": "streamingView",
+                                "designer|displayName": "streamingView",
+                                "itemSelector": "div",
+                                "store": "streamingList"
                             },
                             "designerId": "375916ba-90d6-4a56-b019-fcf2b52f9e08",
                             "cn": [
@@ -248,7 +392,15 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "implHandler": [
-                                            "<object type=\"application/x-shockwave-flash\" height=\"300\" width=\"400\" data=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=antenadota\"><param name=\"movie\" value=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=antenadota\"></param><param name=\"allowScriptAccess\" value=\"always\"></param><param name=\"allowNetworking\" value=\"all\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"flashvars\" value=\"hostname=www.twitch.tv&start_volume=25&channel=antenadota&auto_play=false\"></param></object>"
+                                            "<div>",
+                                            "<object type=\"application/x-shockwave-flash\" height=\"300\" width=\"100%\" data=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel={channelName}\">",
+                                            "    <param name=\"movie\" value=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel={channelName}\"></param>",
+                                            "    <param name=\"allowScriptAccess\" value=\"always\"></param>",
+                                            "    <param name=\"allowNetworking\" value=\"all\"></param>",
+                                            "    <param name=\"allowFullScreen\" value=\"true\"></param>",
+                                            "    <param name=\"flashvars\" value=\"hostname=www.twitch.tv&start_volume=25&channel={channelName}&auto_play=true\"></param>",
+                                            "</object>",
+                                            "</div>"
                                         ],
                                         "designer|displayName": "tpl"
                                     },
@@ -380,7 +532,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "cls": "chatBox",
-                                "height": 340,
+                                "height": 320,
                                 "id": "chatBoxHistory",
                                 "designer|displayName": "chatBoxHistory",
                                 "fieldLabel": "",
@@ -580,10 +732,83 @@
                                     "userConfig": {
                                         "cls": "button_chat",
                                         "height": null,
-                                        "id": "btnSendChat",
+                                        "id": "sendChat",
+                                        "designer|displayName": "sendChat",
                                         "text": "chat"
                                     },
                                     "designerId": "96627c44-06a0-492a-8d23-1b2382f0875b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "listView",
+                "designer|displayName": "listView",
+                "autoScroll": true,
+                "title": "Lista de Streams"
+            },
+            "designerId": "96c424b0-b635-4d6c-81ad-8277ab57c841",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "container",
+                        "designer|displayName": "container"
+                    },
+                    "designerId": "f5e80ab6-5aff-4416-8f7f-cd617dd7b8b5",
+                    "cn": [
+                        {
+                            "type": "Ext.view.View",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "listView",
+                                "itemSelector": "div.preview",
+                                "store": "streamingList",
+                                "trackOver": true
+                            },
+                            "designerId": "7b461355-ca15-424f-b168-92f533635e7c",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "itemTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "implHandler": [
+                                            "<div class=\"preview\">",
+                                            "\t<div class=\"imagePreview\">",
+                                            "        <img alt=\"\" src=\"{imageUrl}\">",
+                                            "\t</div>",
+                                            "    <div class=\"description\">",
+                                            "        <p class=\"title\"><label>{title}</label></p>",
+                                            "    \t<p class=\"info\">{viewers} viewers on <label>{name}</label></p>",
+                                            "    </div>",
+                                            "</div>"
+                                        ],
+                                        "designer|displayName": "itemTpl"
+                                    },
+                                    "designerId": "0218b910-a579-4a8d-8f61-fd61f1e6d10a"
                                 }
                             ]
                         }

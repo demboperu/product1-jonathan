@@ -1,0 +1,84 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "streaming"
+    },
+    "designerId": "e210e1b2-26dc-46cd-ba2e-da38f4f8d735",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "preview.medium",
+                "name": "imageUrl",
+                "type": "string"
+            },
+            "designerId": "02a16078-265f-4c2e-bff1-4c79bf79f80b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "channel.status",
+                "name": "title",
+                "type": "string"
+            },
+            "designerId": "967fa169-c0fd-40fa-939d-a48c6ccf0ee2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "channel.display_name",
+                "name": "name",
+                "type": "string"
+            },
+            "designerId": "057cab52-7c83-4442-92b5-643aa6844629"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "viewers",
+                "name": "viewers",
+                "type": "string"
+            },
+            "designerId": "23e19bc8-0766-42fb-bd0b-27db7c23f4aa"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "channel.name",
+                "name": "channelName",
+                "type": "string"
+            },
+            "designerId": "bf5ab403-7584-4548-8dc6-82e5095c4e0f"
+        }
+    ]
+}

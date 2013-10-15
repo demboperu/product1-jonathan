@@ -1,16 +1,18 @@
-.col_left {width:25%; float:left; padding:10px 0px; text-align:center; background-color:darkgray}
+.col_left {width:25%; float:left; padding:10px 0px; text-align:center; background-color:#282828; height:100%}
 .col_left .menu_simple{ width:100%; padding-top:10px}
-.col_left .title{ font-size:25px; margin:10px 20px}
+.col_left .title{ min-height:100px; height:15%; background-repeat:no-repeat; width:170px; background-image:url('http://www-cdn.jtvnw.net/images/xarth/twitch_logo.png'); background-color:transparent; border-width:0px}
+.col_left .submenu{ height:70%; }
+.col_left .logout { height:15%; min-height:50px; text-align:center; padding:10px 5px;}
 
 .col_center {width:50%; float:left; padding:0px}
 .col_center .video {width:80%; height:auto; margin:10px auto;}
 
-.col_right {width:25%; float:left; padding:0px;background-color:darkgray}
+.col_right {width:25%; float:left; padding:0px;background-color:#282828}
 .col_right .menu_simple{ width:100%;}
 .col_right .chatBox{width:100%;}
 .col_right .chatInput{width:90%; margin:auto}
 
-.button_group {background-color:darkgray; text-align:center; padding:10px 5px}
+.button_group {background-color:#282828; text-align:center; padding:10px 5px}
 .button_group a{width:40%}
 
 .button_chat {text-align:center; padding:5px 5%}
@@ -21,3 +23,8 @@
 
 .button_group_video {text-align:left; padding:5px; width:80%; margin:auto}
 .button_group_video a {}
+
+
+.listView {margin:10px}
+.listView .container{text-align:center;width:auto}
+.listView .preview{width:400px;display:inline-block;float:left;height:300px;padding:10px 0px 10px 10px}
