@@ -1,0 +1,441 @@
+{
+   "_links": {
+      "self": "https://api.twitch.tv/kraken/streams?embeddable=true&game=Dota+2&limit=10&offset=0",
+      "featured": "https://api.twitch.tv/kraken/streams/featured",
+      "summary": "https://api.twitch.tv/kraken/streams/summary",
+      "followed": "https://api.twitch.tv/kraken/streams/followed",
+      "next": "https://api.twitch.tv/kraken/streams?embeddable=true&game=Dota+2&limit=10&offset=10"
+   },
+   "streams": [
+      {
+         "_id": 7263559280,
+         "game": "Dota 2",
+         "viewers": 7425,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_beyondthesummit-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_beyondthesummit-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_beyondthesummit-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_beyondthesummit-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/beyondthesummit"
+         },
+         "channel": {
+            "mature": false,
+            "status": "Rebroadcast: WePlay Dota 2 - Na`Vi vs Empire // Liquid vs Loser w/ @LDDota & @BTSGoDz<a href='http://strike.huahcoding.com'>otro link<a/>",
+            "display_name": "<a href='http://strike.huahcoding.com'>jonathan<a/>",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 29578325,
+            "name": "beyondthesummit",
+            "created_at": "2012-04-07T04:16:39Z",
+            "updated_at": "2013-10-24T21:54:49Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/beyondthesummit-profile_image-d3d31e2a3b0f1e0a-300x300.jpeg",
+            "banner": null,
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/beyondthesummit-channel_offline_image-53bd7662904b95e3-640x360.jpeg",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/beyondthesummit",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/beyondthesummit",
+               "follows": "https://api.twitch.tv/kraken/channels/beyondthesummit/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/beyondthesummit/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/beyondthesummit/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/beyondthesummit",
+               "features": "https://api.twitch.tv/kraken/channels/beyondthesummit/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/beyondthesummit/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/beyondthesummit/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/beyondthesummit/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/beyondthesummit/videos"
+            }
+         }
+      },
+      {
+         "_id": 7263713712,
+         "game": "Dota 2",
+         "viewers": 5372,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_sing_sing-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_sing_sing-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_sing_sing-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_sing_sing-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/sing_sing"
+         },
+         "channel": {
+            "mature": true,
+            "status": "DEFENSE OF LEGENDS NEWBIE POV",
+            "display_name": "<a href='http://strike.huahcoding.com' onmouseover='alert(document.body);'>Sing_sing<a/>",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 21390470,
+            "name": "sing_sing",
+            "created_at": "2011-03-28T14:51:57Z",
+            "updated_at": "2013-10-24T22:12:29Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/sing_sing-profile_image-260bffe71ab9475b-300x300.jpeg",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/sing_sing-channel_header_image-b59c20a951432198-640x125.png",
+            "video_banner": null,
+            "background": "http://static-cdn.jtvnw.net/jtv_user_pictures/sing_sing-background_image-34a9476ba6deeb67.png",
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/sing_sing",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/sing_sing",
+               "follows": "https://api.twitch.tv/kraken/channels/sing_sing/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/sing_sing/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/sing_sing/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/sing_sing",
+               "features": "https://api.twitch.tv/kraken/channels/sing_sing/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/sing_sing/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/sing_sing/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/sing_sing/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/sing_sing/videos"
+            }
+         }
+      },
+      {
+         "_id": 7263293040,
+         "game": "Dota 2",
+         "viewers": 3905,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_versuta-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/versuta"
+         },
+         "channel": {
+            "mature": true,
+            "status": "REBROADCAST: NaVi vs Empire, Empire vs Liquid",
+            "display_name": "<script>alert('ola ke ase');</script>VeRsuta",
+            "game": "Dota 2",
+            "delay": 120,
+            "_id": 21802540,
+            "name": "versuta",
+            "created_at": "2011-04-17T17:31:36Z",
+            "updated_at": "2013-10-24T21:20:54Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/versuta-profile_image-425ce49fede0b8c9-300x300.png",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/versuta-channel_header_image-b750f011745f764f-640x125.jpeg",
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/versuta-channel_offline_image-2f2f645ae48ae8bd-640x360.jpeg",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/versuta",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/versuta",
+               "follows": "https://api.twitch.tv/kraken/channels/versuta/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/versuta/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/versuta/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/versuta",
+               "features": "https://api.twitch.tv/kraken/channels/versuta/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/versuta/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/versuta/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/versuta/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/versuta/videos"
+            }
+         }
+      },
+      {
+         "_id": 7262461824,
+         "game": "Dota 2",
+         "viewers": 1854,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_wagamamatv-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/wagamamatv"
+         },
+         "channel": {
+            "mature": false,
+            "status": "WagaGaming Dota!! [720p]",
+            "display_name": "WagamamaTV",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 24811779,
+            "name": "wagamamatv",
+            "created_at": "2011-09-14T17:02:42Z",
+            "updated_at": "2013-10-24T19:50:05Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/wagamamatv-profile_image-fcc33886efd92c4f-300x300.jpeg",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/wagamamatv-channel_header_image-109c7b921b8aa5a9-640x125.png",
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/wagamamatv-channel_offline_image-f26b3fdc31b6d395-640x360.jpeg",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/wagamamatv",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/wagamamatv",
+               "follows": "https://api.twitch.tv/kraken/channels/wagamamatv/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/wagamamatv/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/wagamamatv/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/wagamamatv",
+               "features": "https://api.twitch.tv/kraken/channels/wagamamatv/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/wagamamatv/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/wagamamatv/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/wagamamatv/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/wagamamatv/videos"
+            }
+         }
+      },
+      {
+         "_id": 7260817952,
+         "game": "Dota 2",
+         "viewers": 1570,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_fragbitelive-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_fragbitelive-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_fragbitelive-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_fragbitelive-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/fragbitelive"
+         },
+         "channel": {
+            "mature": null,
+            "status": "Fragbite Masters - Dota 2 - Group G w/ 2GD, Draskyl, Weppas, Bruno & Skrff",
+            "display_name": "FragbiteLive",
+            "game": "Dota 2",
+            "delay": 120,
+            "_id": 25809459,
+            "name": "fragbitelive",
+            "created_at": "2011-10-30T01:21:29Z",
+            "updated_at": "2013-10-24T16:57:47Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/fragbitelive-profile_image-9927b40760eacb77-300x300.jpeg",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/fragbitelive-channel_header_image-075e48d9f0b41b83-640x125.png",
+            "video_banner": null,
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/fragbitelive",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/fragbitelive",
+               "follows": "https://api.twitch.tv/kraken/channels/fragbitelive/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/fragbitelive/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/fragbitelive/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/fragbitelive",
+               "features": "https://api.twitch.tv/kraken/channels/fragbitelive/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/fragbitelive/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/fragbitelive/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/fragbitelive/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/fragbitelive/videos"
+            }
+         }
+      },
+      {
+         "_id": 7261883600,
+         "game": "Dota 2",
+         "viewers": 1004,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_vityshka-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_vityshka-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_vityshka-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_vityshka-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/vityshka"
+         },
+         "channel": {
+            "mature": false,
+            "status": "WickedSick gamzaet mm/closiki",
+            "display_name": "Vityshka",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 49085099,
+            "name": "vityshka",
+            "created_at": "2013-09-16T07:57:46Z",
+            "updated_at": "2013-10-24T18:50:43Z",
+            "logo": null,
+            "banner": null,
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/vityshka-channel_offline_image-f17870c62cc96fe4-640x360.png",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/vityshka",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/vityshka",
+               "follows": "https://api.twitch.tv/kraken/channels/vityshka/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/vityshka/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/vityshka/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/vityshka",
+               "features": "https://api.twitch.tv/kraken/channels/vityshka/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/vityshka/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/vityshka/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/vityshka/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/vityshka/videos"
+            }
+         }
+      },
+      {
+         "_id": 7262538720,
+         "game": "Dota 2",
+         "viewers": 787,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_immunepwnz-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_immunepwnz-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_immunepwnz-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_immunepwnz-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/immunepwnz"
+         },
+         "channel": {
+            "mature": false,
+            "status": "immunepwnz is playin mm",
+            "display_name": "immunepwnz",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 26362955,
+            "name": "immunepwnz",
+            "created_at": "2011-11-25T14:10:48Z",
+            "updated_at": "2013-10-24T19:57:57Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/immunepwnz-profile_image-45c9ac5e4608dbbb-300x300.jpeg",
+            "banner": null,
+            "video_banner": null,
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/immunepwnz",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/immunepwnz",
+               "follows": "https://api.twitch.tv/kraken/channels/immunepwnz/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/immunepwnz/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/immunepwnz/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/immunepwnz",
+               "features": "https://api.twitch.tv/kraken/channels/immunepwnz/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/immunepwnz/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/immunepwnz/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/immunepwnz/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/immunepwnz/videos"
+            }
+         }
+      },
+      {
+         "_id": 7263244496,
+         "game": "Dota 2",
+         "viewers": 485,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_pyrionflax-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_pyrionflax-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_pyrionflax-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_pyrionflax-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/pyrionflax"
+         },
+         "channel": {
+            "mature": true,
+            "status": "Dota Viewer Inhouse",
+            "display_name": "Pyrionflax",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 19309473,
+            "name": "pyrionflax",
+            "created_at": "2011-01-06T23:06:41Z",
+            "updated_at": "2013-10-24T21:14:42Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/pyrionflax-profile_image-y5IqI45Wd001C0a-300x300.jpg",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/pyrionflax-channel_header_image-ed8fc151c1f45c3b-640x125.png",
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/pyrionflax-channel_offline_image-c11c635d8838a872-640x360.png",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/pyrionflax",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/pyrionflax",
+               "follows": "https://api.twitch.tv/kraken/channels/pyrionflax/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/pyrionflax/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/pyrionflax/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/pyrionflax",
+               "features": "https://api.twitch.tv/kraken/channels/pyrionflax/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/pyrionflax/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/pyrionflax/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/pyrionflax/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/pyrionflax/videos"
+            }
+         }
+      },
+      {
+         "_id": 7263657664,
+         "game": "Dota 2",
+         "viewers": 322,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_neodota-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_neodota-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_neodota-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_neodota-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/neodota"
+         },
+         "channel": {
+            "mature": false,
+            "status": "European Elite League (EEL) starting at midnight CET with item giveaways! Casted by TheCapitalist",
+            "display_name": "NEODota",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 22690415,
+            "name": "neodota",
+            "created_at": "2011-05-29T20:47:24Z",
+            "updated_at": "2013-10-24T22:40:06Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/neodota-profile_image-795e599cd5f6b1f9-300x300.png",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/neodota-channel_header_image-d9683f097c1396ae-640x125.png",
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/neodota-channel_offline_image-877f76f7e0173eab-640x360.png",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/neodota",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/neodota",
+               "follows": "https://api.twitch.tv/kraken/channels/neodota/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/neodota/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/neodota/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/neodota",
+               "features": "https://api.twitch.tv/kraken/channels/neodota/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/neodota/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/neodota/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/neodota/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/neodota/videos"
+            }
+         }
+      },
+      {
+         "_id": 7262302256,
+         "game": "Dota 2",
+         "viewers": 238,
+         "preview": {
+            "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_virtuspro2dota-80x50.jpg",
+            "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_virtuspro2dota-320x200.jpg",
+            "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_virtuspro2dota-640x400.jpg",
+            "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_virtuspro2dota-{width}x{height}.jpg"
+         },
+         "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/virtuspro2dota"
+         },
+         "channel": {
+            "mature": null,
+            "status": "Santa FP Stream",
+            "display_name": "Virtuspro2Dota",
+            "game": "Dota 2",
+            "delay": 0,
+            "_id": 39582170,
+            "name": "virtuspro2dota",
+            "created_at": "2013-01-22T13:38:01Z",
+            "updated_at": "2013-10-24T19:33:12Z",
+            "logo": "http://static-cdn.jtvnw.net/jtv_user_pictures/virtuspro2dota-profile_image-cba4e7737e177064-300x300.png",
+            "banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/virtuspro2dota-channel_header_image-668e7ede68ad2d22-640x125.jpeg",
+            "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/virtuspro2dota-channel_offline_image-c1ac48d04db8ddd7-640x360.jpeg",
+            "background": null,
+            "profile_banner": null,
+            "url": "http://www.twitch.tv/virtuspro2dota",
+            "_links": {
+               "self": "https://api.twitch.tv/kraken/channels/virtuspro2dota",
+               "follows": "https://api.twitch.tv/kraken/channels/virtuspro2dota/follows",
+               "commercial": "https://api.twitch.tv/kraken/channels/virtuspro2dota/commercial",
+               "stream_key": "https://api.twitch.tv/kraken/channels/virtuspro2dota/stream_key",
+               "chat": "https://api.twitch.tv/kraken/chat/virtuspro2dota",
+               "features": "https://api.twitch.tv/kraken/channels/virtuspro2dota/features",
+               "subscriptions": "https://api.twitch.tv/kraken/channels/virtuspro2dota/subscriptions",
+               "editors": "https://api.twitch.tv/kraken/channels/virtuspro2dota/editors",
+               "teams": "https://api.twitch.tv/kraken/channels/virtuspro2dota/teams",
+               "videos": "https://api.twitch.tv/kraken/channels/virtuspro2dota/videos"
+            }
+         }
+      }
+   ]
+}

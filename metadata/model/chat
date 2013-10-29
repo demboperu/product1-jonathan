@@ -6,7 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "chat"
+        "clientIdProperty": null,
+        "designer|userClassName": "chat",
+        "designer|userAlias": null,
+        "mixins": null
     },
     "designerId": "33d7d7cf-3e70-4a75-8ca2-95bed15b6937",
     "cn": [
@@ -35,6 +38,42 @@
                 "type": "string"
             },
             "designerId": "7e19c0d6-cd88-4cd7-ba3b-b427487f5a5a"
+        },
+        {
+            "type": "processcfgfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "processChat",
+                "designer|params": [
+                    "config"
+                ],
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "cf00720d-6656-487a-ada5-ed695fce7f9a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setChat",
+                "designer|params": [
+                    "value"
+                ],
+                "implHandler": [
+                    "this.Model = value;"
+                ]
+            },
+            "designerId": "465aec83-272b-41d1-82ac-ea7ba9422ed2"
         }
     ]
 }

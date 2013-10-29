@@ -18,13 +18,13 @@ Ext.define('MyApp.model.streaming', {
 
     fields: [
         {
-            mapping: 'preview.medium',
-            name: 'imageUrl',
+            mapping: 'channel.status',
+            name: 'title',
             type: 'string'
         },
         {
-            mapping: 'channel.status',
-            name: 'title',
+            mapping: 'preview.medium',
+            name: 'imageUrl',
             type: 'string'
         },
         {
@@ -42,5 +42,22 @@ Ext.define('MyApp.model.streaming', {
             name: 'channelName',
             type: 'string'
         }
-    ]
+    ],
+
+    init: function() {
+        this.getFormatterObject(this.raw);
+    },
+
+    getFormatterObject: function(obj) {
+        for(var i in obj){
+            if(typeof obj[i] == "string"){
+                obj[i] = Ext.util.Format.htmlEncode(obj[i]);
+            }
+            else if(typeof obj[i] == "object"){
+                this.getFormatterObject(obj[i]);
+            }
+        }
+
+    }
+
 });

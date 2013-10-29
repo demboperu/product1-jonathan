@@ -1,0 +1,13 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyClass1",
+        "extend": "MyApp.model.Streaming"
+    },
+    "designerId": "976f0c1b-3c15-4903-b9b3-6249bda06da4"
+}

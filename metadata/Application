@@ -12,7 +12,8 @@
         ],
         "stores": [
             "chatHistory",
-            "streamingList"
+            "streamingList",
+            "streamingList2"
         ],
         "views": [
             "twitchView"
@@ -35,18 +36,6 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    "//Ext.create('MyApp.view.loginView', {}).show();",
-                    "/*Ext.create('Ext.container.Viewport', {",
-                    "layout: 'fit',",
-                    "id: 'twitchViewMain',",
-                    "xtype: 'twitchView'",
-                    "});*/",
-                    "/*Ext.create('Ext.container.Viewport', {",
-                    "id: 'twitchViewMain',",
-                    "xtype: 'twitchView'",
-                    "}); ",
-                    "",
-                    "*/",
                     "this.viewport = Ext.ComponentQuery.query('viewport')[0];",
                     "",
                     "var user = localStorage.getItem(\"userTwitch\");",
@@ -54,7 +43,7 @@
                     "if(user != undefined && user!=\"\")",
                     "this.viewport.layout.setActiveItem(2);    ",
                     "",
-                    "console.log(this.viewport)"
+                    "//console.log(this.viewport)"
                 ]
             },
             "designerId": "0828fc47-0af6-4d96-bb17-8c31a5b56d66"

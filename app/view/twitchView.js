@@ -31,6 +31,7 @@ Ext.define('MyApp.view.twitchView', {
                 {
                     xtype: 'panel',
                     id: 'loginView',
+                    iconCls: '',
                     title: 'My Panel',
                     items: [
                         {
@@ -43,14 +44,22 @@ Ext.define('MyApp.view.twitchView', {
                             items: [
                                 {
                                     xtype: 'textfield',
+                                    cls: '',
+                                    componentCls: 'inputLogin',
+                                    contentEl: '',
                                     id: 'userName',
-                                    fieldLabel: 'User',
-                                    name: 'userName'
+                                    fieldLabel: 'user',
+                                    name: 'userName',
+                                    allowBlank: false,
+                                    regexText: '/^\d{3}-\d{2}-\d{4}$/',
+                                    validateBlank: true,
+                                    vtype: 'email'
                                 },
                                 {
                                     xtype: 'textfield',
+                                    cls: 'inputLogin',
                                     id: 'userPass',
-                                    fieldLabel: 'Password',
+                                    fieldLabel: 'pass',
                                     name: 'userPass',
                                     inputType: 'password'
                                 },
@@ -65,6 +74,7 @@ Ext.define('MyApp.view.twitchView', {
                 },
                 {
                     xtype: 'panel',
+                    autoScroll: true,
                     title: 'Twitch.tv',
                     items: [
                         {
@@ -94,15 +104,26 @@ Ext.define('MyApp.view.twitchView', {
                                             items: [
                                                 {
                                                     xtype: 'menuitem',
-                                                    text: 'Menu Item'
+                                                    cls: '',
+                                                    componentCls: '',
+                                                    overCls: '',
+                                                    iconCls: 'filter_icon games',
+                                                    text: 'Games'
                                                 },
                                                 {
                                                     xtype: 'menuitem',
-                                                    text: 'Menu Item'
+                                                    iconCls: 'filter_icon channels',
+                                                    text: 'Channels'
                                                 },
                                                 {
                                                     xtype: 'menuitem',
-                                                    text: 'Menu Item'
+                                                    iconCls: 'filter_icon videos',
+                                                    text: 'Videos'
+                                                },
+                                                {
+                                                    xtype: 'menuitem',
+                                                    iconCls: 'filter_icon kabam',
+                                                    text: 'Kabam'
                                                 }
                                             ]
                                         },
@@ -152,7 +173,9 @@ Ext.define('MyApp.view.twitchView', {
                                     items: [
                                         {
                                             xtype: 'button',
+                                            cls: 'buttonPurple',
                                             id: 'logout',
+                                            fixed: true,
                                             text: 'Salir'
                                         }
                                     ]
@@ -194,10 +217,12 @@ Ext.define('MyApp.view.twitchView', {
                                     items: [
                                         {
                                             xtype: 'button',
+                                            cls: 'buttonPurple',
                                             text: 'follow'
                                         },
                                         {
                                             xtype: 'button',
+                                            cls: 'buttonPurple',
                                             text: 'Subcribe 8$'
                                         }
                                     ]
@@ -224,20 +249,26 @@ Ext.define('MyApp.view.twitchView', {
                                     ]
                                 },
                                 {
-                                    xtype: 'textareafield',
-                                    cls: 'chatBox',
-                                    height: 320,
-                                    id: 'chatBoxHistory',
-                                    fieldLabel: '',
-                                    name: 'chatBoxHistory',
-                                    value: 'Welcome to the chat room!\n» Orogenesis: hopefully they can work as a team too\n\n» Jmickley1996: god am i the only one whos sound is terrible? like reallly choppy?\n\n» Orogenesis: sounds fine to me Ive missed winter, I like his insights great player but cant find a good team to save his life\n\n» Mod Awesome_ninja: it does crackle a bit\n\n» Psilocyboid: Winter is a horrible caster for this. Hard to understand and talks over Godz all the time\n\n» Mod Awesome_ninja: I think this is due to Twitch VODs\n\n» Orogenesis: yeah I hear what you mean now How is it hard to understand? His english vocabulary is better than most americans just a bit of an accent\n\n» Jmickley1996: DAMN YOU TWITCH\n\n» Psilocyboid: vocabulary is one thing, enunciation is another\n\n» Mod Awesome_ninja: he is also talking over skype'
-                                },
-                                {
-                                    xtype: 'textareafield',
-                                    cls: 'chatInput',
-                                    id: 'chatBox',
-                                    fieldLabel: '',
-                                    name: 'chatBox'
+                                    xtype: 'container',
+                                    items: [
+                                        {
+                                            xtype: 'textareafield',
+                                            cls: 'chatBox',
+                                            height: 320,
+                                            id: 'chatBoxHistory',
+                                            fieldLabel: '',
+                                            name: 'chatBoxHistory',
+                                            value: 'Welcome to the chat room!\n» Orogenesis: hopefully they can work as a team too\n\n» Jmickley1996: god am i the only one whos sound is terrible? like reallly choppy?\n\n» Orogenesis: sounds fine to me Ive missed winter, I like his insights great player but cant find a good team to save his life\n\n» Mod Awesome_ninja: it does crackle a bit\n\n» Psilocyboid: Winter is a horrible caster for this. Hard to understand and talks over Godz all the time\n\n» Mod Awesome_ninja: I think this is due to Twitch VODs\n\n» Orogenesis: yeah I hear what you mean now How is it hard to understand? His english vocabulary is better than most americans just a bit of an accent\n\n» Jmickley1996: DAMN YOU TWITCH\n\n» Psilocyboid: vocabulary is one thing, enunciation is another\n\n» Mod Awesome_ninja: he is also talking over skype'
+                                        },
+                                        {
+                                            xtype: 'textfield',
+                                            cls: 'chatInput',
+                                            id: 'chatBox',
+                                            fieldLabel: '',
+                                            name: 'chatBox',
+                                            vtype: 'email'
+                                        }
+                                    ]
                                 },
                                 {
                                     xtype: 'container',
@@ -253,6 +284,7 @@ Ext.define('MyApp.view.twitchView', {
                                                 items: [
                                                     {
                                                         xtype: 'menucheckitem',
+                                                        cls: 'menuItem',
                                                         text: 'Menu Item'
                                                     },
                                                     {
@@ -290,7 +322,7 @@ Ext.define('MyApp.view.twitchView', {
                                         },
                                         {
                                             xtype: 'button',
-                                            cls: 'button_chat',
+                                            cls: 'button_chat buttonPurple',
                                             id: 'sendChat',
                                             text: 'chat'
                                         }
@@ -314,7 +346,7 @@ Ext.define('MyApp.view.twitchView', {
                                     xtype: 'dataview',
                                     id: 'listView',
                                     itemSelector: 'div.preview',
-                                    itemTpl: [
+                                    itemTpl: Ext.create('Ext.XTemplate', 
                                         '<div class="preview">',
                                         '	<div class="imagePreview">',
                                         '        <img alt="" src="{imageUrl}">',
@@ -323,9 +355,16 @@ Ext.define('MyApp.view.twitchView', {
                                         '        <p class="title"><label>{title}</label></p>',
                                         '    	<p class="info">{viewers} viewers on <label>{name}</label></p>',
                                         '    </div>',
-                                        '</div>'
-                                    ],
-                                    store: 'streamingList',
+                                        '</div>',
+                                        {
+                                            renderer: function(v) {
+                                                test1 = v; 
+                                                console.log('asd');
+                                                console.log(v);
+                                            }
+                                        }
+                                    ),
+                                    store: 'streamingList2',
                                     trackOver: true
                                 }
                             ]

@@ -25,5 +25,20 @@ Ext.define('MyApp.model.chat', {
             name: 'user',
             type: 'string'
         }
-    ]
+    ],
+
+    constructor: function() {
+        var me = this;
+        me.processChat(me);
+        me.callParent(arguments);
+    },
+
+    processChat: function(config) {
+
+    },
+
+    setChat: function(value) {
+        this.Model = value;
+    }
+
 });

@@ -18,11 +18,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "mapping": "preview.medium",
-                "name": "imageUrl",
+                "mapping": "channel.status",
+                "name": "title",
                 "type": "string"
             },
-            "designerId": "02a16078-265f-4c2e-bff1-4c79bf79f80b"
+            "designerId": "22dbed2e-debf-4a81-98f0-1fb87977ae1d"
         },
         {
             "type": "Ext.data.Field",
@@ -32,11 +32,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "mapping": "channel.status",
-                "name": "title",
+                "mapping": "preview.medium",
+                "name": "imageUrl",
                 "type": "string"
             },
-            "designerId": "967fa169-c0fd-40fa-939d-a48c6ccf0ee2"
+            "designerId": "f0ecccc7-6d1f-4478-97c8-244dff1974a6"
         },
         {
             "type": "Ext.data.Field",
@@ -50,7 +50,7 @@
                 "name": "name",
                 "type": "string"
             },
-            "designerId": "057cab52-7c83-4442-92b5-643aa6844629"
+            "designerId": "c8f11c8d-817f-442d-93e9-25b0d3558867"
         },
         {
             "type": "Ext.data.Field",
@@ -64,7 +64,7 @@
                 "name": "viewers",
                 "type": "string"
             },
-            "designerId": "23e19bc8-0766-42fb-bd0b-27db7c23f4aa"
+            "designerId": "d21e0201-3b53-44fb-870b-c727f75be882"
         },
         {
             "type": "Ext.data.Field",
@@ -78,7 +78,48 @@
                 "name": "channelName",
                 "type": "string"
             },
-            "designerId": "bf5ab403-7584-4548-8dc6-82e5095c4e0f"
+            "designerId": "07f224ef-e8c2-4b8e-b377-651f61217abd"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "this.getFormatterObject(this.raw);"
+                ]
+            },
+            "designerId": "309fe3c9-d71d-4d84-8e2b-c73f19ee6c31"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getFormatterObject",
+                "designer|params": [
+                    "obj"
+                ],
+                "implHandler": [
+                    "for(var i in obj){",
+                    "    if(typeof obj[i] == \"string\"){",
+                    "        obj[i] = Ext.util.Format.htmlEncode(obj[i]);",
+                    "    }",
+                    "    else if(typeof obj[i] == \"object\"){",
+                    "    \tthis.getFormatterObject(obj[i]);",
+                    "    }",
+                    "}",
+                    ""
+                ]
+            },
+            "designerId": "ac5f4489-c284-4bd7-ad39-d036eba61dc8"
         }
     ]
 }

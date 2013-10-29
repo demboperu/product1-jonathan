@@ -25,6 +25,7 @@
             "userConfig": {
                 "id": "loginView",
                 "designer|displayName": "loginView",
+                "iconCls": "",
                 "title": "My Panel"
             },
             "designerId": "77eee004-9d53-49e1-99ac-8c5be737deee",
@@ -52,10 +53,24 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "dock": null,
+                                "cls": "",
+                                "componentCls": "inputLogin",
+                                "contentEl": "",
+                                "frame": null,
                                 "id": "userName",
+                                "overCls": null,
+                                "width": null,
                                 "designer|displayName": "userName",
-                                "fieldLabel": "User",
-                                "name": "userName"
+                                "fieldLabel": "user",
+                                "labelAlign": null,
+                                "labelClsExtra": null,
+                                "labelWidth": null,
+                                "name": "userName",
+                                "allowBlank": false,
+                                "regexText": "/^\\d{3}-\\d{2}-\\d{4}$/",
+                                "validateBlank": true,
+                                "vtype": "email"
                             },
                             "designerId": "1919ba19-1bf2-4bb9-9e81-cb9596dfb6f3"
                         },
@@ -67,9 +82,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "dock": null,
+                                "cls": "inputLogin",
                                 "id": "userPass",
                                 "designer|displayName": "userPass",
-                                "fieldLabel": "Password",
+                                "fieldLabel": "pass",
                                 "name": "userPass",
                                 "inputType": "password"
                             },
@@ -103,6 +120,7 @@
             "userConfig": {
                 "height": null,
                 "width": null,
+                "autoScroll": true,
                 "title": "Twitch.tv"
             },
             "designerId": "91854967-1d8c-413e-968b-a1c85f05bb60",
@@ -187,7 +205,12 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "text": "Menu Item"
+                                                "cls": "",
+                                                "componentCls": "",
+                                                "overCls": "",
+                                                "designer|displayName": "Games",
+                                                "iconCls": "filter_icon games",
+                                                "text": "Games"
                                             },
                                             "designerId": "118a26bc-3a7a-4e51-adf1-68f22f3b470c"
                                         },
@@ -199,7 +222,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "text": "Menu Item"
+                                                "iconCls": "filter_icon channels",
+                                                "text": "Channels"
                                             },
                                             "designerId": "4871de1f-28d6-4d21-bc73-2274f7681cdf"
                                         },
@@ -211,9 +235,23 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "text": "Menu Item"
+                                                "iconCls": "filter_icon videos",
+                                                "text": "Videos"
                                             },
                                             "designerId": "cea79f53-cb77-4eeb-9fad-0fc7e4541ed9"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "filter_icon kabam",
+                                                "text": "Kabam"
+                                            },
+                                            "designerId": "9f0f37d8-d99b-47cf-be78-948325397181"
                                         }
                                     ]
                                 },
@@ -344,8 +382,10 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "cls": "buttonPurple",
                                         "id": "logout",
                                         "designer|displayName": "logout",
+                                        "fixed": true,
                                         "text": "Salir"
                                     },
                                     "designerId": "b4a6767a-35c3-4644-be8d-adfb8d28f3e7"
@@ -451,6 +491,7 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "cls": "buttonPurple",
                                         "text": "follow"
                                     },
                                     "designerId": "1252ee23-6cf1-4c0f-8551-23435868b0fc"
@@ -463,6 +504,7 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "cls": "buttonPurple",
                                         "text": "Subcribe 8$"
                                     },
                                     "designerId": "1984bbf8-7d37-46ee-b203-4a3c5bed22cb"
@@ -524,59 +566,73 @@
                             ]
                         },
                         {
-                            "type": "Ext.form.field.TextArea",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "userConfig": {
-                                "cls": "chatBox",
-                                "height": 320,
-                                "id": "chatBoxHistory",
-                                "designer|displayName": "chatBoxHistory",
-                                "fieldLabel": "",
-                                "name": "chatBoxHistory",
-                                "value": [
-                                    "Welcome to the chat room!",
-                                    "» Orogenesis: hopefully they can work as a team too",
-                                    "",
-                                    "» Jmickley1996: god am i the only one whos sound is terrible? like reallly choppy?",
-                                    "",
-                                    "» Orogenesis: sounds fine to me Ive missed winter, I like his insights great player but cant find a good team to save his life",
-                                    "",
-                                    "» Mod Awesome_ninja: it does crackle a bit",
-                                    "",
-                                    "» Psilocyboid: Winter is a horrible caster for this. Hard to understand and talks over Godz all the time",
-                                    "",
-                                    "» Mod Awesome_ninja: I think this is due to Twitch VODs",
-                                    "",
-                                    "» Orogenesis: yeah I hear what you mean now How is it hard to understand? His english vocabulary is better than most americans just a bit of an accent",
-                                    "",
-                                    "» Jmickley1996: DAMN YOU TWITCH",
-                                    "",
-                                    "» Psilocyboid: vocabulary is one thing, enunciation is another",
-                                    "",
-                                    "» Mod Awesome_ninja: he is also talking over skype"
-                                ]
-                            },
-                            "designerId": "377cdc74-f1ee-4ba1-be2b-817388be3810"
-                        },
-                        {
-                            "type": "Ext.form.field.TextArea",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": "chatInput",
-                                "id": "chatBox",
-                                "designer|displayName": "chatBox",
-                                "fieldLabel": "",
-                                "name": "chatBox"
-                            },
-                            "designerId": "4e85706d-390c-4bd1-aaea-6b4a04b9c0c8"
+                            "designerId": "4c3e0e1e-a21e-4994-83ca-123f73a2940e",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.TextArea",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "chatBox",
+                                        "height": 320,
+                                        "id": "chatBoxHistory",
+                                        "designer|displayName": "chatBoxHistory",
+                                        "fieldLabel": "",
+                                        "name": "chatBoxHistory",
+                                        "value": [
+                                            "Welcome to the chat room!",
+                                            "» Orogenesis: hopefully they can work as a team too",
+                                            "",
+                                            "» Jmickley1996: god am i the only one whos sound is terrible? like reallly choppy?",
+                                            "",
+                                            "» Orogenesis: sounds fine to me Ive missed winter, I like his insights great player but cant find a good team to save his life",
+                                            "",
+                                            "» Mod Awesome_ninja: it does crackle a bit",
+                                            "",
+                                            "» Psilocyboid: Winter is a horrible caster for this. Hard to understand and talks over Godz all the time",
+                                            "",
+                                            "» Mod Awesome_ninja: I think this is due to Twitch VODs",
+                                            "",
+                                            "» Orogenesis: yeah I hear what you mean now How is it hard to understand? His english vocabulary is better than most americans just a bit of an accent",
+                                            "",
+                                            "» Jmickley1996: DAMN YOU TWITCH",
+                                            "",
+                                            "» Psilocyboid: vocabulary is one thing, enunciation is another",
+                                            "",
+                                            "» Mod Awesome_ninja: he is also talking over skype"
+                                        ]
+                                    },
+                                    "designerId": "377cdc74-f1ee-4ba1-be2b-817388be3810"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "chatInput",
+                                        "id": "chatBox",
+                                        "designer|displayName": "chatBox",
+                                        "fieldLabel": "",
+                                        "name": "chatBox",
+                                        "regex": null,
+                                        "regexText": null,
+                                        "vtype": "email"
+                                    },
+                                    "designerId": "4e85706d-390c-4bd1-aaea-6b4a04b9c0c8"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.container.Container",
@@ -625,6 +681,7 @@
                                                     },
                                                     "codeClass": null,
                                                     "userConfig": {
+                                                        "cls": "menuItem",
                                                         "text": "Menu Item"
                                                     },
                                                     "designerId": "f9ceabbf-88ac-4653-9c93-490a5c7efb69"
@@ -730,7 +787,7 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "cls": "button_chat",
+                                        "cls": "button_chat buttonPurple",
                                         "height": null,
                                         "id": "sendChat",
                                         "designer|displayName": "sendChat",
@@ -782,7 +839,7 @@
                             "userConfig": {
                                 "id": "listView",
                                 "itemSelector": "div.preview",
-                                "store": "streamingList",
+                                "store": "streamingList2",
                                 "trackOver": true
                             },
                             "designerId": "7b461355-ca15-424f-b168-92f533635e7c",
@@ -808,7 +865,30 @@
                                         ],
                                         "designer|displayName": "itemTpl"
                                     },
-                                    "designerId": "0218b910-a579-4a8d-8f61-fd61f1e6d10a"
+                                    "designerId": "0218b910-a579-4a8d-8f61-fd61f1e6d10a",
+                                    "cn": [
+                                        {
+                                            "type": "templatefunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "renderer",
+                                                "designer|params": [
+                                                    "v"
+                                                ],
+                                                "implHandler": [
+                                                    "test1 = v; ",
+                                                    "console.log('asd');",
+                                                    "console.log(v);"
+                                                ],
+                                                "designer|displayName": "renderer"
+                                            },
+                                            "designerId": "68f800f7-d0b2-4942-907c-65ac8ac68795"
+                                        }
+                                    ]
                                 }
                             ]
                         }

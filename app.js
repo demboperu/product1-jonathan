@@ -25,7 +25,8 @@ Ext.application({
     ],
     stores: [
         'chatHistory',
-        'streamingList'
+        'streamingList',
+        'streamingList2'
     ],
     views: [
         'twitchView'
@@ -37,18 +38,6 @@ Ext.application({
     name: 'MyApp',
 
     launch: function() {
-        //Ext.create('MyApp.view.loginView', {}).show();
-        /*Ext.create('Ext.container.Viewport', {
-        layout: 'fit',
-        id: 'twitchViewMain',
-        xtype: 'twitchView'
-        });*/
-        /*Ext.create('Ext.container.Viewport', {
-        id: 'twitchViewMain',
-        xtype: 'twitchView'
-        }); 
-
-        */
         this.viewport = Ext.ComponentQuery.query('viewport')[0];
 
         var user = localStorage.getItem("userTwitch");
@@ -56,7 +45,7 @@ Ext.application({
         if(user != undefined && user!="")
         this.viewport.layout.setActiveItem(2);    
 
-        console.log(this.viewport)
+        //console.log(this.viewport)
     }
 
 });

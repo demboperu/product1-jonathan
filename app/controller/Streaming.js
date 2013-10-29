@@ -74,7 +74,7 @@ Ext.define('MyApp.controller.Streaming', {
             }
         });
 
-        console.log("asd");
+        //console.log("asd");
     },
 
     onSendChatClick: function(element, event, opt) {

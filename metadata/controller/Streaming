@@ -48,7 +48,7 @@
                     "    }",
                     "});",
                     "",
-                    "console.log(\"asd\");"
+                    "//console.log(\"asd\");"
                 ]
             },
             "designerId": "02e2e9b2-de48-4fbb-991e-41b90d44a8ed"
@@ -76,7 +76,7 @@
                     "if(userName==undefined){",
                     "    this.application.viewport.layout.setActiveItem(0);",
                     "}else{",
-                    "\tthis.getTxtChatHistory().setValue(\"» \" + userName + \":\" + newChat + \"\\n\\n\" +historyChat);",
+                    "    this.getTxtChatHistory().setValue(\"» \" + userName + \":\" + newChat + \"\\n\\n\" +historyChat);",
                     "    this.getTxtChat().setValue(\"\");",
                     "}",
                     ""

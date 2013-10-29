@@ -10,7 +10,7 @@
         "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.2.3",
-    "xdsBuild": 1039,
+    "xdsBuild": 1044,
     "schemaVersion": 1,
     "upgradeVersion": 210000000503,
     "framework": "ext42",
@@ -75,22 +75,49 @@
                 "app/store/streamingList.js"
             ],
             "className": "streamingList"
+        },
+        "ef228c45-8252-4519-9de7-b47b9f2beefc": {
+            "paths": [
+                "metadata/store/streamingList2",
+                "app/store/override/streamingList2.js",
+                "app/store/streamingList2.js"
+            ],
+            "className": "streamingList2"
+        },
+        "c83db736-568a-4cb1-a0f5-1165a366cdf4": {
+            "paths": [
+                "metadata/view/MyClass",
+                "app/view/override/MyClass.js",
+                "app/view/MyClass.js"
+            ],
+            "className": "MyClass"
+        },
+        "976f0c1b-3c15-4903-b9b3-6249bda06da4": {
+            "paths": [
+                "metadata/model/MyClass1",
+                "app/model/override/MyClass1.js",
+                "app/model/MyClass1.js"
+            ],
+            "className": "MyClass1"
         }
     },
     "viewOrderMap": {
         "view": [
-            "b156e280-2772-4473-b49d-a4beec23b990"
+            "b156e280-2772-4473-b49d-a4beec23b990",
+            "c83db736-568a-4cb1-a0f5-1165a366cdf4"
         ],
         "store": [
             "193d937f-fee0-42e6-8a96-3ca14ab7f089",
-            "ae67bb89-69d1-46d8-8419-61d227266551"
+            "ae67bb89-69d1-46d8-8419-61d227266551",
+            "ef228c45-8252-4519-9de7-b47b9f2beefc"
         ],
         "controller": [
             "0c21f2ca-6384-4db8-9023-4d7702a079a0"
         ],
         "model": [
             "33d7d7cf-3e70-4a75-8ca2-95bed15b6937",
-            "e210e1b2-26dc-46cd-ba2e-da38f4f8d735"
+            "e210e1b2-26dc-46cd-ba2e-da38f4f8d735",
+            "976f0c1b-3c15-4903-b9b3-6249bda06da4"
         ],
         "resource": [
             "62e9829d-5307-43f0-9dc7-12dd864d2fed",

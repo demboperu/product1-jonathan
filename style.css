@@ -1,19 +1,35 @@
+table tbody{display:block}
+table tr{display:block}
+table td{width:100% !important}
+
+
 .col_left {width:25%; float:left; padding:10px 0px; text-align:center; background-color:#282828; height:100%}
-.col_left .menu_simple{ width:100%; padding-top:10px}
+.col_left .menu_simple{ width:100%; padding:5px; background-color:#282828}
 .col_left .title{ min-height:100px; height:15%; background-repeat:no-repeat; width:170px; background-image:url('http://www-cdn.jtvnw.net/images/xarth/twitch_logo.png'); background-color:transparent; border-width:0px}
-.col_left .submenu{ height:70%; }
-.col_left .logout { height:15%; min-height:50px; text-align:center; padding:10px 5px;}
+
+.col_left .submenu{ height:70%; padding-top:0px}
+.col_left .x-menu-item { width:100%;background-color:#1b1b1b; text-align:left; padding:3px}
+.col_left .x-menu-item-text{ color:#aaa}
+.col_left .x-menu-item-text:hover{ color:white}
+.col_left .filter_icon { background-image:url('http://www-cdn.jtvnw.net/images/xarth/large_nav_icons.png'); background-repeat: no-repeat;}
+.col_left .games {background-position:0 -0px;}
+.col_left .channels {background-position: 0 -18px;}
+.col_left .videos {background-position: 0 -36px;}
+.col_left .kabam {background-position: 0 -198px;}
+
+.col_left .logout { height:15%; width:25%; text-align:center; bottom:10px; position:fixed;background-color:#1b1b1b;z-index:10px}
 
 .col_center {width:50%; float:left; padding:0px}
 .col_center .video {width:80%; height:auto; margin:10px auto;}
 
-.col_right {width:25%; float:left; padding:0px;background-color:#282828}
+.col_right {width:25%; float:left; padding:0px;background-color:#282828;}
 .col_right .menu_simple{ width:100%;}
 .col_right .chatBox{width:100%;}
 .col_right .chatInput{width:90%; margin:auto}
 
 .button_group {background-color:#282828; text-align:center; padding:10px 5px}
 .button_group a{width:40%}
+/*.buttonPurple{background-color: #6a4e9e !important;background-image:none}*/
 
 .button_chat {text-align:center; padding:5px 5%}
 .button_chat .button_config {width:20%; padding-right:10px; height:25px}
@@ -28,3 +44,5 @@
 .listView {margin:10px}
 .listView .container{text-align:center;width:auto}
 .listView .preview{width:400px;display:inline-block;float:left;height:300px;padding:10px 0px 10px 10px}
+
+.inputLogin {width:200px}

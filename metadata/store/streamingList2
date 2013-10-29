@@ -6,15 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": false,
+        "autoLoad": true,
         "model": "streaming",
-        "storeId": "streamingList",
-        "designer|userClassName": "streamingList"
+        "storeId": "streamingList2",
+        "designer|userClassName": "streamingList2"
     },
-    "designerId": "ae67bb89-69d1-46d8-8419-61d227266551",
+    "designerId": "ef228c45-8252-4519-9de7-b47b9f2beefc",
     "cn": [
         {
-            "type": "Ext.data.proxy.JsonP",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"
@@ -22,10 +22,9 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "proxyStream",
-                "noCache": false,
-                "url": "https://api.twitch.tv/kraken/streams?callback=foo&game=Dota+2&limit=10&embeddable=true"
+                "url": "app/data/streams1.json"
             },
-            "designerId": "41188855-f9ce-4946-a52e-a0bfddee8048",
+            "designerId": "ee6c365f-8eb4-46db-a620-71385a837ea9",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -38,7 +37,7 @@
                         "root": "streams",
                         "designer|displayName": "readerStream"
                     },
-                    "designerId": "47d69f11-a2c6-4b9c-a243-9b68de19671b"
+                    "designerId": "7599c933-d2bc-420f-8533-5f15cb4ba856"
                 }
             ]
         }
